@@ -1,0 +1,25 @@
+<?php
+
+// src/Controller/nrocontroller.php
+namespace App\Controller;
+
+use Symfony\Component\HttpFoundation\Response;
+
+class nrocontroller
+{    
+    /**
+     * @Route("/azar/nro")
+     */
+    public function nro(): Response
+    {
+        $number = random_int(0, 100);
+
+        return new Response(
+           '<html><body>Numero al azar: '.$number.'</body></html>'
+       ); 
+  
+     
+    }
+}
+
+

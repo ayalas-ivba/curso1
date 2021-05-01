@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Curso de symfony </title>
+    </head>
+    <body>
+    <h1>Si el valor recibido es mayor que 5, imprimo 10 veces el titulo.</h1>
+    <h1>El valor recibido es {{valor}} </h1>
+    
+    {% if valor > 5 %}
+    <ul>
+        {% for i in range(low=1, high=10, step=1) %}
+            <li> <h1>Ejercicio 2 </h1></li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+         
+    </body>
+</html>
