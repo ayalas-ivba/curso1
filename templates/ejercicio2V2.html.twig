@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Curso de symfony </title>
+    </head>
+    <body>
+
+    <h1>El valor recibido es {{valor}} </h1>
+    <h1>Si el valor recibido es igual a 5 ..., imprimo algo.</h1>
+    {% if valor == 5 %}
+        <h1>Como el valor recibido es igual a 5, imprimo y {{"ya que está pruebo otro filtro"|striptags|title }}</h1> 
+        <h1> {{"y el filtro upper"|upper}}</h1>     
+    {% endif %}
+
+    
+    {% for i in range(low=1, high=20, step=1) %}
+        <div
+           <h1> {{ ('lo repito' ~ i ~ '/20 veces') |upper }} </h1>
+        </div>
+    {% endfor %}
+    
+    </body>
+</html>

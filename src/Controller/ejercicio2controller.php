@@ -10,13 +10,22 @@ use Symfony\Component\Routing\Annotation\Route;
 class ejercicio2controller extends AbstractController
 {
     /**
-     * @Route("/ejercicio2", name="ejercicio2")
+     * @Route("/ejercicio2V1", name="ejercicio2V1")
      */
     public function muestro_titulos(Request $request)    
     {
         $number = random_int(0, 10); 
 
-        return $this->render('/ejercicio2.html.twig',["valor" => $number]);
+        return $this->render('/ejercicio2V1.html.twig',["valor" => $number]);
+    }
+    /**
+     * @Route("/ejercicio2V2", name="ejercicio2V2")
+     */
+    public function muestro_titulos2(Request $request)    
+    {
+        $number = random_int(0, 10); 
+
+        return $this->render('/ejercicio2V2.html.twig',["valor" => $number]);
     }
 }
 
